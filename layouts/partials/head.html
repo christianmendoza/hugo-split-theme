@@ -1,0 +1,30 @@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- SEO -->
+<title>{{ .Title }}</title>
+{{ with .Site.Params.description }}<meta name="description" content="{{ . }}" />{{ end }}
+<meta name="robots" content="index, follow" />
+<meta name="referrer" content="always" />
+
+<!-- Social & Open Graph -->
+<meta property="og:title" content="{{ .Title }}" />
+{{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+{{ with .Site.Params.shareImage }}
+<meta property="og:image" content="{{ . | absURL }}" />
+<meta name="twitter:card" content="summary_large_image" />
+{{ end }}
+{{ with .Site.Params.twitterHandle }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
+
+<!-- Favicon -->
+{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}" />{{ end }}
+
+<!-- Styles -->
+<link rel="stylesheet" href="assets/css/split.css" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<!-- Google Analytics -->
+{{ if and (.Site.GoogleAnalytics) (not (in (printf "%#v" .Site.BaseURL) "localhost")) }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}

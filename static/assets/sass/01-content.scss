@@ -1,0 +1,317 @@
+//-------------------------------------------------------------------------------
+// Google Font Import
+//-------------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+//-------------------------------------------------------------------------------
+// Variables
+//-------------------------------------------------------------------------------
+
+// Colors
+$color-background 	: #061C30;
+$color-text			: #848d96;
+$color-link			: #848d96;
+$color-link-hover	: #CA486d; 
+$color-maverick		: #47bec7; 
+$color-tagline		: #CCCCCC; 
+
+// Breakpoints
+$bp-smallish 		: 1200px;
+$bp-tablet 			: 800px;
+$bp-mobile 			: 500px;
+
+// Images
+$image-background	: url('../../images/background.jpg');
+
+//-------------------------------------------------------------------------------
+// Fade In
+//-------------------------------------------------------------------------------
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
+
+//-------------------------------------------------------------------------------
+// Content
+//-------------------------------------------------------------------------------
+
+html {
+	background-color: $color-background; 
+}
+body.page-template-page-fullsingle-split {
+	background-color: $color-background; 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 33px;
+	letter-spacing: -0.2px;
+	color: $color-text;
+	animation: fadein 2s;
+
+	//-------------------------------------------------------------------------------
+	// Global Styles
+	//-------------------------------------------------------------------------------
+
+	p {
+		color: $color-text;
+	}
+
+}
+
+//-------------------------------------------------------------------------------
+// Sections and Columns
+//-------------------------------------------------------------------------------
+
+.fs-split {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+
+	@media (max-width: $bp-tablet ) {
+		height: auto;
+		flex-wrap: wrap;
+	}	
+
+	//-------------------------------------------------------------------------------
+	// Column - Big Image
+	//-------------------------------------------------------------------------------
+
+	.split-image {
+		width: 50%;
+		height: 100vh;
+		background-image: $image-background; 
+		background-position:center center;
+		background-size:cover;
+
+		@media (max-width: $bp-tablet ) {
+			height: 80vh;
+			width: 100%;
+		}	
+
+	}
+
+	//-------------------------------------------------------------------------------
+	// Column - Content 
+	//-------------------------------------------------------------------------------
+
+	.split-content {
+		width: 50%;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+  		justify-content: center;
+  		overflow: auto;
+
+		@media (max-width: $bp-tablet ) {
+			width: 100%;
+			height: auto;
+		}	
+
+		.split-content-vertically-center {
+			padding: 80px;
+			max-width: 640px;
+			margin-top: auto;
+  			margin-bottom: auto;
+
+			@media (max-width: $bp-smallish ) {
+				padding: 60px;
+			}
+
+			@media (max-width: $bp-tablet ) {
+				padding: 40px;
+			}	
+			
+		}
+
+	}
+
+}
+
+//-------------------------------------------------------------------------------
+// Content
+//-------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------
+// Intro Text
+//-------------------------------------------------------------------------------
+
+.split-intro {
+	font-weight: 600;
+	font-size: 64px; 
+	line-height: 80px;
+	letter-spacing: -2px;
+
+	h1 {
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 16px; 
+		line-height: 16px;
+		margin-bottom: 40px;
+		letter-spacing: 0.4px;
+		color: $color-maverick;
+	}
+
+	.tagline {
+		color: $color-tagline;
+	}
+
+}
+
+//-------------------------------------------------------------------------------
+// Biography
+//-------------------------------------------------------------------------------
+
+.split-bio {
+	padding: 40px 0 40px 0;
+	font-family: 'Lora', serif;
+
+	@media (max-width: $bp-smallish ) {
+		padding: 30px 0;
+	}
+
+	@media (max-width: $bp-tablet ) {
+		padding: 20px 0;
+	}	
+
+	p {
+		color: $color-text;
+	}
+
+	a {
+		color: $color-link;
+		transition-duration: 0.5s;
+		border-bottom: 1px dotted $color-link;
+
+		&:hover {
+			color: $color-link-hover;
+			transition-duration: 0.1s;
+			border-bottom: 1px dotted $color-link-hover;
+		}
+
+	}			
+
+}
+
+//-------------------------------------------------------------------------------
+// Lists
+//-------------------------------------------------------------------------------
+
+.split-lists {	
+
+	.split-list {
+		width: 30%;
+		display: inline-block;
+		margin-bottom: 40px;
+
+		@media (max-width: $bp-mobile ) {
+			width: 90%;
+		}	
+
+		h3 {
+			font-weight: 400;
+			text-transform: uppercase;
+			font-size: 11px;
+			line-height: 11px;
+			margin-bottom: 31px;
+			color: $color-text;
+			letter-spacing: 2px;
+			opacity: 0.5;
+		}
+
+		ul {
+			
+
+			li {
+				font-size: 16px;
+				line-height: 16px;	
+				margin-bottom: 12px;
+				
+				a {
+					color: $color-link;
+					transition-duration: 0.5s;
+
+					&:hover {
+						color: $color-link-hover;
+						transition-duration: 0.1s;
+					}
+
+				}
+				
+			}
+
+		}
+
+	}	
+
+}
+
+//-------------------------------------------------------------------------------
+// Credit
+//-------------------------------------------------------------------------------
+
+//	To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split 
+//	this really helps contribute towards us developing more templates and means the world to me!
+//	Cheers, Rob (@robhope)
+
+.split-credit {
+	opacity: 0.4;
+
+	p {
+		font-size: 12px; 
+		line-height: 14px;
+
+		a { 
+			color: $color-text;
+		}
+
+	}
+
+}
+
+//-------------------------------------------------------------------------------
+// Videos - shout out to my bud https://twitter.com/manuelmoreale for the Ninja skills
+//-------------------------------------------------------------------------------
+
+// YouTube
+
+.split-video {
+	overflow:hidden;
+	position:relative;
+}
+.video-wrap{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.video-container {
+	position:relative;
+	overflow:hidden;
+	height: 56.25vw; 
+	width: 100vw;
+	@media (max-aspect-ratio:16/9) { 
+		height: 100vh; 
+		width: 177.7777777778vh; // this is for the ration 16:9
+	}
+}
+.video-container iframe, 
+.video-container object, 
+.video-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+// Self-Hosted
+
+video.video {
+	object-fit      : cover;
+	object-position : 50% 50%;
+	width           : 100%;
+	height          : 100%;
+} 
