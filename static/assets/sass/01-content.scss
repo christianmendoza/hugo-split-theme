@@ -205,6 +205,7 @@ body.page-template-page-fullsingle-split {
 		width: 30%;
 		display: inline-block;
 		margin-bottom: 40px;
+		vertical-align: top;
 
 		@media (max-width: $bp-mobile ) {
 			width: 90%;
