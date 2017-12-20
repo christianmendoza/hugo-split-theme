@@ -3,6 +3,7 @@
 
 <!-- SEO -->
 <title>{{ .Title }}</title>
+{{ with .Site.Params.name }}<meta name="author" content="{{ . }}" />{{ end }}
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}" />{{ end }}
 <meta name="robots" content="index, follow" />
 <meta name="referrer" content="always" />
@@ -25,10 +26,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
 <!-- Image Styles -->
-{{ if .Site.Params.split.image.enable }}
+{{ if .Site.Params.visual.image.enable }}
   <style type="text/css">
-  {{ if .Site.Params.split.image.file }}
-    .fs-split .split-image { background-image: url("{{ .Site.Params.split.image.file }}"); background-position: {{ if .Site.Params.split.image.position }}{{ .Site.Params.split.image.position }}{{ else }}center center{{ end }}; }
+  {{ if .Site.Params.visual.image.file }}
+    .fs-split .split-image { background-image: url("{{ .Site.Params.visual.image.file }}"); background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }}; }
   {{ end }}
   </style>
 {{ end }}

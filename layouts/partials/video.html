@@ -1,18 +1,18 @@
 <div class="split-image split-video">
 
   <!-- YouTube Video -->
-  {{ if .Site.Params.split.video.youtubeId }}
+  {{ if .Site.Params.visual.video.youtubeId }}
 
     <div class="video-wrap">
       <div class="video-container">
-        <iframe class="video-content" src="https://www.youtube.com/embed/{{ .Site.Params.split.video.youtubeId }}?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;playlist={{ .Site.Params.split.video.youtubeId }}&amp;autoplay=1{{ if .Site.Params.split.video.mute }}&amp;mute=1{{ end }}" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video-content" src="https://www.youtube.com/embed/{{ .Site.Params.visual.video.youtubeId }}?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;playlist={{ .Site.Params.visual.video.youtubeId }}&amp;autoplay=1{{ if .Site.Params.visual.video.mute }}&amp;mute=1{{ end }}" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
   <!-- Self-Hosted Video -->
-  {{ else if .Site.Params.split.video.file }}
+  {{ else if .Site.Params.visual.video.file }}
 
-    <video class="video" src="{{ .Site.Params.split.video.file }}" loop autoplay{{ if .Site.Params.split.video.mute }} muted{{ end }}></video>
+    <video class="video" src="{{ .Site.Params.visual.video.file }}" loop autoplay{{ if .Site.Params.visual.video.mute }} muted{{ end }}></video>
 
   {{ end }}
 
