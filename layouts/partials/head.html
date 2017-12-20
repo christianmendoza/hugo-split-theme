@@ -24,10 +24,11 @@
 <link rel="stylesheet" href="assets/css/split.css" type="text/css" media="screen" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-{{ if .Site.Params.background.image.enable }}
+<!-- Image Styles -->
+{{ if .Site.Params.split.image.enable }}
   <style type="text/css">
-  {{ if .Site.Params.background.image.file }}
-    .fs-split .split-image { background-image: url("{{ .Site.Params.background.image.file }}"); background-position: {{ if .Site.Params.background.image.position }}{{ .Site.Params.background.image.position }}{{ else }}center center{{ end }}; }
+  {{ if .Site.Params.split.image.file }}
+    .fs-split .split-image { background-image: url("{{ .Site.Params.split.image.file }}"); background-position: {{ if .Site.Params.split.image.position }}{{ .Site.Params.split.image.position }}{{ else }}center center{{ end }}; }
   {{ end }}
   </style>
 {{ end }}
