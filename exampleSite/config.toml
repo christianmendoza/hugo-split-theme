@@ -19,6 +19,9 @@ googleAnalytics = ""
   # Favicon
   favicon = "favicon.ico"
 
+  # Copyright
+  copyright = "&copy;2017 Your Name"
+
   # Section - Content
   [params.content]
     name = "Jenny Jones"

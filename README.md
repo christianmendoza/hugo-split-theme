@@ -140,6 +140,14 @@ favicon = "favicon.ico"
 ```
 
 
+### Add copyright
+Set `copyright` with the text you want for your copyright.
+
+```toml
+copyright = "&copy;2017 Your Name"
+```
+
+
 ### Add Google Analytics
 
 Enable Google Analytics by adding your tracking id to `googleAnalytics`. Leave empty or remove if you don't want.
