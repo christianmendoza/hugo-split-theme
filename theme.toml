@@ -17,5 +17,5 @@ min_version = "0.21"
 # If porting an existing theme
 [original]
   name = "One Page Love"
-  homepage = "https://onepagelove.com/split"
+  homepage = "//onepagelove.com/split"
   repo = ""
