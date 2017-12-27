@@ -1,6 +1,6 @@
 # Split
 
-Split is a single page, centrally-divided layout for a professional online presense with a big image or video left with alongside content. It is a direct port of [One Page Love's](//onepagelove.com) [Split template](//onepagelove.com/split).
+Split is a single page, centrally-divided layout for a professional online presense with a big image or video left with alongside content. It is a port of [Split](//onepagelove.com/split) by [One Page Love](//onepagelove.com).
 
 This Hugo theme features an image or video visual section as well as a content section for your name, tagline, bio, and links.
 
@@ -178,7 +178,7 @@ The original template is released under the [Creative Commons Attribution 3.0 Li
 
 ## Annotations
 
-- [Original Split Template](//onepagelove.com/split) by One Page Love
+- Original [Split](//onepagelove.com/split) Template by [One Page Love](//onepagelove.com)
 - [Girl Image](https://unsplash.com/photos/pAs4IM6OGWI) by Joe Gardner
 - [Clouds Over Mountain Video](http://www.wedistill.io/videos/clouds-over-the-mountain-hd-stock-video) by John Guinn
 - Video integration CSS ninja skills by my bud [Manu](https://twitter.com/manuelmoreale)
