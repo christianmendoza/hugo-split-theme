@@ -38,3 +38,5 @@
 {{ if and (.Site.GoogleAnalytics) (not (in (printf "%#v" .Site.BaseURL) "localhost")) }}
   {{ template "_internal/google_analytics.html" . }}
 {{ end }}
+
+{{- partial "head_custom.html" . }}
