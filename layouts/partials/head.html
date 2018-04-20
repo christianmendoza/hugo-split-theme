@@ -19,17 +19,17 @@
 {{ with .Site.Params.twitterHandle }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
 
 <!-- Favicon -->
-{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}" />{{ end }}
+{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . | absURL }}" />{{ end }}
 
 <!-- Styles -->
-<link rel="stylesheet" href="assets/css/split.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="{{ "assets/css/split.css" | absURL }}" type="text/css" media="screen" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
 <!-- Image Styles -->
 {{ if .Site.Params.visual.image.enable }}
   <style type="text/css">
   {{ if .Site.Params.visual.image.file }}
-    .fs-split .split-image { background-image: url("{{ .Site.Params.visual.image.file }}"); background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }}; }
+    .fs-split .split-image { background-image: url("{{ .Site.Params.visual.image.file | absURL }}"); background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }}; }
   {{ end }}
   </style>
 {{ end }}
