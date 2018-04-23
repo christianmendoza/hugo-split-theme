@@ -3,16 +3,15 @@
 
 name = "Split"
 license = "Creative Commons Attribution 3.0 Unported"
-licenselink = "//github.com/christianmendoza/hugo-split-theme/blob/master/LICENSE.md"
+licenselink = "//github.com/escalate/hugo-split-theme/blob/master/LICENSE.md"
 description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
-homepage = "//github.com/christianmendoza/hugo-split-theme"
+homepage = "//github.com/escalate/hugo-split-theme"
 tags = ["minimal", "onepage", "one page", "responsive", "personal"]
 features = []
 min_version = "0.21"
 
 [author]
-  name = "Christian Mendoza"
-  homepage = "//iamchristian.me"
+  name = "Christian Mendoza / Felix Börner"
 
 # If porting an existing theme
 [original]
