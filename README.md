@@ -49,7 +49,7 @@ You can either use a video that you host or one that is on YouTube.
 
 ##### Use your own video
 
-Add your video to the `static` folder and change `file` to the location of your video accordingly. Make sure you delete `youtubeId` or comment it out. 
+Add your video to the `static` folder and change `file` to the location of your video accordingly. Make sure you delete `youtubeId` or comment it out.
 
 ```toml
 [[params.visual.image]]
@@ -64,7 +64,7 @@ Add your video to the `static` folder and change `file` to the location of your 
 
 ##### Use a YouTube video
 
-Get the ID of the YouTube video and add it to `youtubeId`. Make sure you delete `file` or comment it out. 
+Get the ID of the YouTube video and add it to `youtubeId`. Make sure you delete `file` or comment it out.
 
 ```toml
 [[params.visual.image]]
@@ -105,15 +105,15 @@ This is what generates one link list:
 [[params.links]]
   [params.links.list1]
     heading = "Connect"
-  
+
     [[params.links.list1.link]]
       text = "Blog"
       url = "#"
-  
+
     [[params.links.list1.link]]
       text = "Email"
       url = "#"
-  
+
     [[params.links.list1.link]]
       text = "Newsletter"
       url = "#"

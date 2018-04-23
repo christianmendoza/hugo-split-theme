@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ default .Site.LanguageCode "en-US" }}">
 
 <head>
   {{ partial "head" . }}
@@ -11,7 +11,7 @@
 
     <!-- Image -->
     {{ if .Site.Params.visual.image.enable }}
-    
+
       <div class="split-image">
 
       </div>
