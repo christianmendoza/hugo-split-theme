@@ -14,7 +14,7 @@ copyright = "&copy;2018 Your Name"
 [params]
 
   # Metadata for search engines and social sharing
-  name = "Jenny Jones"
+  author = "Jenny Jones"
   description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
   shareImage = "images/social.jpg"
   twitterHandle = "onepagelove"

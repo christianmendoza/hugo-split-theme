@@ -122,10 +122,10 @@ This is what generates one link list:
 
 ### Add metadata
 
-`name` and `description` metadata helps search engines with how to display your site in search results. `shareImage` and `twitterHandle` help improves how your content is displayed when your site is shared across social media sites.
+`author` and `description` metadata helps search engines with how to display your site in search results. `shareImage` and `twitterHandle` help improves how your content is displayed when your site is shared across social media sites.
 
 ```toml
-name = "Jenny Jones"
+author = "Jenny Jones"
 description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
 shareImage = "images/social.jpg"
 twitterHandle = "onepagelove"

@@ -3,7 +3,7 @@
 
 <!-- SEO -->
 <title>{{ .Title }}</title>
-{{ with .Site.Params.name }}<meta name="author" content="{{ . }}" />{{ end }}
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}" />{{ end }}
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}" />{{ end }}
 <meta name="robots" content="index, follow" />
 <meta name="referrer" content="always" />
