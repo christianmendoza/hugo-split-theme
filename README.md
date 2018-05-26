@@ -37,7 +37,7 @@ Add a file named `_index.md` inside content directory to create your homepage. U
     $ hugo new content/_index.md
 
 
-```toml
+```markdown
 +++
 title = "Jenny Jones"
 tagline = "Designer. Stylist. Nomad."
@@ -55,7 +55,7 @@ You can create additional pages as usual inside content directory.
     $ hugo new content/luctus-urna.md
 
 
-```toml
+```markdown
 +++
 title = "luctus urna"
 +++
