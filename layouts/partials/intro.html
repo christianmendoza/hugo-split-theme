@@ -1,4 +1,4 @@
 <div class="split-intro">
-  <h1>{{ .Site.Params.content.name }}</h1>
-  <span class="tagline">{{ .Site.Params.content.tagline }}</span>
+  {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+  {{ with .Params.tagline }}<span class="tagline">{{ . }}</span>{{ end }}
 </div>

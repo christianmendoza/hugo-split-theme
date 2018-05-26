@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ default .Site.LanguageCode "en-US" }}">
+
+<head>
+  {{ partial "head" . }}
+</head>
+
+<body id="fullsingle" class="page-template-page-fullsingle-split">
+
+  <div class="fs-split">
+
+    <!-- Image -->
+    {{ if .Site.Params.visual.image.enable }}
+
+      <div class="split-image">
+
+      </div>
+
+    <!-- Video -->
+    {{ else if .Site.Params.visual.video.enable }}
+
+      {{ partial "video" . }}
+
+    {{ end }}
+
+    <!-- Content Side -->
+    <div class="split-content">
+      <div class="split-content-vertically-center">
+        <!-- Intro -->
+        {{ partial "intro" . }}
+
+        <!-- Main -->
+        {{ block "main" .  }}
+          <!-- Bio -->
+          {{ partial "bio" . }}
+        {{ end }}
+
+        <!-- Footer -->
+        {{ partial "footer" . }}
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

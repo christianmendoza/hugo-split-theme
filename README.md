@@ -27,6 +27,43 @@ After installing the Split theme successfully it requires a just a few more step
 Take a look inside the [`exampleSite`](//github.com/escalate/hugo-split-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/escalate/hugo-split-theme/blob/master/exampleSite/config.toml). To use it, copy the [`config.toml`](//github.com/escalate/hugo-split-theme/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to customize this theme as you like.
 
 
+### Add content
+
+#### Homepage
+
+Add a file named `_index.md` inside content directory to create your homepage. Use TOML configuration elements to set `title` and `tagline` of your page. Simple write your content in markdown style.
+
+
+    $ hugo new content/_index.md
+
+
+```toml
++++
+title = "Jenny Jones"
+tagline = "Designer. Stylist. Nomad."
++++
+
+Donec at libero id lectus porta dapibus eu in nibh. Cras id mauris sapien. Fusce viverra [luctus urna]({{< ref "luctus-urna.md" >}}) ac rutrum. Duis semper elit eu mi facilisis eleifend. Donec semper, [ipsum in]({{< ref "ipsum-in.md" >}}) malesuada congue, [purus sem]({{< ref "purus-sem.md" >}}) ullamcorper massa, sit amet lacinia nibh enim sed massa.
+```
+
+
+#### Additional pages
+
+You can create additional pages as usual inside content directory.
+
+
+    $ hugo new content/luctus-urna.md
+
+
+```toml
++++
+title = "luctus urna"
++++
+
+Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.
+```
+
+
 ### Use an image
 
 Set `enable` to `true`. Add your image to the `static` folder and change `file` to the location of your image accordingly. By default the image position is centered, however you can specify your own by supplying `position` with a valid CSS position.
@@ -80,18 +117,6 @@ Get the ID of the YouTube video and add it to `youtubeId`. Make sure you delete 
 ##### Additional settings
 
 Set `mute` to `true` if you want the video to play muted and `false` if you want the sound. The video is coded to autoplay and loop. If you want to change that the code can be found in [`layouts/partials/video.html`](//github.com/escalate/hugo-split-theme/tree/master/layouts/partials/video.html).
-
-
-### Add content
-
-`name`, `tagline` and `bio` corresponds to their respective text in the content section. Use markdown in `bio` to add any links.
-
-```toml
-[params.content]
-  name = "Jenny Jones"
-  tagline = "Designer. Stylist. Nomad."
-  bio = "Donec at libero id lectus porta dapibus eu in nibh. Cras id mauris sapien. Fusce viverra [luctus urna](#) ac rutrum. Duis semper elit eu mi facilisis eleifend. Donec semper, [ipsum in](#) malesuada congue, [purus sem](#) ullamcorper massa, sit amet lacinia nibh enim sed massa."
-```
 
 
 ### Add links

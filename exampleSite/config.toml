@@ -22,12 +22,6 @@ copyright = "&copy;2018 Your Name"
   # Favicon
   favicon = "favicon.ico"
 
-  # Section - Content
-  [params.content]
-    name = "Jenny Jones"
-    tagline = "Designer. Stylist. Nomad."
-    bio = "Donec at libero id lectus porta dapibus eu in nibh. Cras id mauris sapien. Fusce viverra [luctus urna](#) ac rutrum. Duis semper elit eu mi facilisis eleifend. Donec semper, [ipsum in](#) malesuada congue, [purus sem](#) ullamcorper massa, sit amet lacinia nibh enim sed massa."
-
   # Section - Visual
   [params.visual]
 

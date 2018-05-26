@@ -1,5 +1,3 @@
-{{ if .Site.Params.content.bio }}
 <div class="split-bio">
-  <p>{{ .Site.Params.content.bio | markdownify }}</p>
+  {{ .Content }}
 </div>
-{{ end }}
