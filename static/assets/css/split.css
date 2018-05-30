@@ -198,21 +198,23 @@ body.page-template-page-fullsingle-split p {
 }
 
 .split-bio {
-  padding: 40px 0 40px 0;
+  padding: 40px 0 20px 0;
   font-family: "Lora", serif;
 }
 @media (max-width: 1200px) {
   .split-bio {
-    padding: 30px 0;
+    padding: 30px 0 10px 0;
   }
 }
 @media (max-width: 800px) {
   .split-bio {
-    padding: 20px 0;
+    padding: 20px 0 0 0;
   }
 }
 .split-bio p {
   color: #848d96;
+  margin-bottom: 20px;
+  line-height: inherit;
 }
 .split-bio a {
   color: #848d96;
@@ -223,6 +225,103 @@ body.page-template-page-fullsingle-split p {
   color: #CA486d;
   transition-duration: 0.1s;
   border-bottom: 1px dotted #CA486d;
+}
+.split-bio em,
+.split-bio i {
+  font-style: italic;
+  line-height: inherit;
+}
+.split-bio strong,
+.split-bio b {
+  font-weight: bold;
+  line-height: inherit;
+}
+.split-bio small {
+  font-size: 80%;
+  line-height: inherit;
+}
+.split-bio h1, .split-bio .h1,
+.split-bio h2, .split-bio .h2,
+.split-bio h3, .split-bio .h3,
+.split-bio h4, .split-bio .h4,
+.split-bio h5, .split-bio .h5,
+.split-bio h6, .split-bio .h6 {
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+}
+.split-bio h1 small, .split-bio .h1 small,
+.split-bio h2 small, .split-bio .h2 small,
+.split-bio h3 small, .split-bio .h3 small,
+.split-bio h4 small, .split-bio .h4 small,
+.split-bio h5 small, .split-bio .h5 small,
+.split-bio h6 small, .split-bio .h6 small {
+  line-height: 0;
+}
+.split-bio h1, .split-bio .h1 {
+  font-size: 1.5em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-bio h2, .split-bio .h2 {
+  font-size: 1.25em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-bio h3, .split-bio .h3 {
+  font-size: 1.1875em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-bio h4, .split-bio .h4 {
+  font-size: 1.125em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-bio h5, .split-bio .h5 {
+  font-size: 1.0625em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-bio h6, .split-bio .h6 {
+  font-size: 1em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.split-bio ul,
+.split-bio ol,
+.split-bio dl {
+  margin-bottom: 20px;
+  list-style-position: outside;
+  line-height: inherit;
+}
+.split-bio li {
+  font-size: inherit;
+}
+.split-bio ul {
+  margin-left: 2.25em;
+  list-style-type: disc;
+}
+.split-bio ol {
+  margin-left: 2.25em;
+  list-style-type: decimal;
+}
+.split-bio ul ul, .split-bio ol ul, .split-bio ul ol, .split-bio ol ol {
+  margin-left: 1.25em;
+  margin-bottom: 0;
+}
+.split-bio dl dt {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.split-bio dl dd {
+  margin-bottom: 10px;
 }
 
 .split-lists .split-list {
