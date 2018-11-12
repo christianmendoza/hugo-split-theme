@@ -27,7 +27,7 @@
 
 <!-- Image Styles -->
 {{ if .Site.Params.visual.image.enable }}
-  <style type="text/css">
+  <style>
   {{ if .Site.Params.visual.image.file }}
     .fs-split .split-image { background-image: url("{{ .Site.Params.visual.image.file | absURL }}"); background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }}; }
   {{ end }}
