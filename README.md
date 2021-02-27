@@ -179,7 +179,7 @@ favicon = "favicon.ico"
 Set `copyright` with the text you want for your copyright.
 
 ```toml
-copyright = "&copy;2017 Your Name"
+copyright = "&copy;2021 Your Name"
 ```
 
 
