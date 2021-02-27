@@ -14,7 +14,7 @@ Inside the folder of your Hugo site run:
     $ cd themes
     $ git clone https://github.com/escalate/hugo-split-theme.git
 
-For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
+For more information read the official [setup guide](https://gohugo.io/getting-started/quick-start/) of Hugo.
 
 
 ## Getting started
