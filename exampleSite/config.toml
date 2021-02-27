@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "//example.org"
+baseURL = "https://example.com"
 languageCode = "en-US"
 title = "Split - HTML Template Demo"
 theme = "hugo-split-theme"
