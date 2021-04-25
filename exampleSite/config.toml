@@ -5,6 +5,10 @@ title = "Split - HTML Template Demo"
 theme = "hugo-split-theme"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
 
+# Local preview mode
+relativeURLs = true
+uglyURLs = true
+
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 
