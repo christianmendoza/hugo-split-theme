@@ -7,12 +7,12 @@ name: CI
     branches:
       - master
 jobs:
-  ci:
+  build:
     name: Build Hugo example site and archive output
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -22,8 +22,27 @@ jobs:
           cd exampleSite
           hugo --verbose --baseURL= --themesDir=../../
 
-      - name: Archive Hugo example site
-        uses: actions/upload-artifact@v2
+      - name: Upload Hugo example site
+        uses: actions/upload-artifact@v4
         with:
           name: hugo-example-site
           path: exampleSite/public
+
+  lighthouse:
+    name: Run Lighthouse tests against built Hugo example site
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download Hugo example site
+        uses: actions/download-artifact@v4
+        with:
+          name: hugo-example-site
+          path: exampleSite/public
+
+      - name: Run Lighthouse against a static dist dir
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          configPath: ./lighthouserc.json
